@@ -142,3 +142,6 @@ DEFAULT_AUTO_FIELD = "django.db.models.BigAutoField"
 CSRF_FAILURE_VIEW = "pages.views.csrf_failure"
 handler404 = "pages.views.page_not_found"
 handler500 = "pages.views.server_error"
+# Перенаправление после входа в систему
+LOGIN_REDIRECT_URL = '/'  # перенаправлять на главную страницу
+LOGOUT_REDIRECT_URL = '/'  # перенаправлять на главную после выхода
