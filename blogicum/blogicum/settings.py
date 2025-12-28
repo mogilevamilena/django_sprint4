@@ -21,7 +21,8 @@ LOGIN_URL = "login"
 
 # SECURITY WARNING: keep the secret key used in production secret!
 SECRET_KEY = (
-    "django-insecure-b_u5a+n2-!pvq6kp)4ozo_lax6h1_%yt$!$@qch!%+ocf3o@0n"
+    "django-insecure-b_u5a+n2-!pvq6kp)4ozo_lax6h1_"
+    "%yt$!$@qch!%+ocf3o@0n"
 )
 
 # SECURITY WARNING: don't run with debug turned on in production!
@@ -90,16 +91,20 @@ DATABASES = {
 
 AUTH_PASSWORD_VALIDATORS = [
     {
-        "NAME": "django.contrib.auth.password_validation.UserAttributeSimilarityValidator",
+        "NAME": "django.contrib.auth.password_validation."
+                "UserAttributeSimilarityValidator",
     },
     {
-        "NAME": "django.contrib.auth.password_validation.MinimumLengthValidator",
+        "NAME": "django.contrib.auth.password_validation."
+                "MinimumLengthValidator",
     },
     {
-        "NAME": "django.contrib.auth.password_validation.CommonPasswordValidator",
+        "NAME": "django.contrib.auth.password_validation."
+                "CommonPasswordValidator",
     },
     {
-        "NAME": "django.contrib.auth.password_validation.NumericPasswordValidator",
+        "NAME": "django.contrib.auth.password_validation."
+                "NumericPasswordValidator",
     },
 ]
 
@@ -142,6 +147,7 @@ DEFAULT_AUTO_FIELD = "django.db.models.BigAutoField"
 CSRF_FAILURE_VIEW = "pages.views.csrf_failure"
 handler404 = "pages.views.page_not_found"
 handler500 = "pages.views.server_error"
+
 # Перенаправление после входа в систему
 LOGIN_REDIRECT_URL = '/'  # перенаправлять на главную страницу
 LOGOUT_REDIRECT_URL = '/'  # перенаправлять на главную после выхода

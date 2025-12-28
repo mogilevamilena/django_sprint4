@@ -1,0 +1,18 @@
+# .flake8
+[flake8]
+max-line-length = 79
+ignore = 
+    D100, D101, D102, D103, D104, D105, D106, D107,
+    W503, W504, W291, W293,
+    E999
+exclude = 
+    .git,
+    __pycache__,
+    migrations,
+    *.pyc,
+    venv,
+    .venv,
+    env,
+    .env,
+    *.sqlite3,
+    sent_emails
